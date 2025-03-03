@@ -1,0 +1,38 @@
+{
+    "name": "prueba-tecnica-docfav/alejandro-calderon",
+    "description": "Prueba técnica PHP con DDD y Clean Architecture",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PruebaTecnicaDocfav\\AlejandroCalderon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jose alejandro calderon",
+            "email": "jose.calderon@infodeclat.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "ramsey/uuid": "^4.2",
+        "doctrine/dbal": "^3.9",
+        "doctrine/orm": "^2.20",
+        "doctrine/annotations": "^2.0",
+        "doctrine/cache": "^2.2",
+        "symfony/cache": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-unit": "phpunit --testsuite=Unit",
+        "test-integration": "phpunit --testsuite=Integration"
+    }
+}
